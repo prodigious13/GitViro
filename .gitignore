@@ -57,3 +57,6 @@ buck-out/
 
 # Secret API Keys
 secrets.js
+
+# Assets
+js/res/

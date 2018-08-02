@@ -21,7 +21,7 @@ import { ViroVRSceneNavigator, ViroARSceneNavigator } from 'react-viro';
 import apiKey from './secrets';
 
 /*
- TODO: Insert your API key below
+ your API key below
  */
 var sharedProps = {
   apiKey: apiKey,

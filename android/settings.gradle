@@ -1,0 +1,3 @@
+rootProject.name = 'GitViro'
+
+include ':app'

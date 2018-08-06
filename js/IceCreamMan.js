@@ -30,7 +30,6 @@ var MainScene = createReactClass({
       <ViroARScene>
         <ViroDirectionalLight color="#ffffff" direction={[0, -1, -0.2]} />
         <ViroAmbientLight color="#ffffff" intensity={200} />
-
         <Viro3DObject
           source={require('./res/icecreamman_anim/icecreamman_anim_a.vrx')}
           resources={[

@@ -8,7 +8,7 @@ import {
 const Island = () => (
   <ViroPortalScene passable={true} dragType="FixedDistance" onDrag={() => {}}>
     <ViroPortal
-      position={[0, 0, 3]}
+      position={[0, 0, 1]}
       scale={[0.1, 0.1, 0.1]}
       rotation={[0, 180, 0]}
     >

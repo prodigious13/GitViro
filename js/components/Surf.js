@@ -24,7 +24,7 @@ export default class Surf extends Component {
         passable={true}
         dragType="FixedToWorld"
         onDrag={() => {}}
-        position={[-1, 0, 3]}
+        position={[-1, 0, 1]}
         onPortalEnter={this._togglePlay}
         onPortalExit={this._togglePlay}
         rotation={[0, 160, 0]}

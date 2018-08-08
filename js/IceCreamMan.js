@@ -17,17 +17,18 @@ import {
   Viro3DObject,
 } from 'react-viro';
 
-var createReactClass = require('create-react-class');
-var MainScene = createReactClass({
-  getInitialState() {
-    return {
+class IceCreamMan extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       runAnimation: true,
     };
-  },
+    this._onTappedIcecream = this._onTappedIcecream.bind(this);
+  }
 
-  render: function() {
+  render() {
     return (
-      <ViroARScene>
+      <React.Fragment>
         <ViroDirectionalLight color="#ffffff" direction={[0, -1, -0.2]} />
         <ViroAmbientLight color="#ffffff" intensity={200} />
         <Viro3DObject
@@ -37,23 +38,23 @@ var MainScene = createReactClass({
             require('./res/icecreamman_anim/icecreamman_normal.png'),
             require('./res/icecreamman_anim/icecreamman_specular.png'),
           ]}
-          position={[0, -1, -2]}
-          scale={[0.5, 0.5, 0.5]}
+          position={[0, 0, -8]}
+          scale={[5, 5, 5]}
           type="VRX"
           dragType="FixedToWorld"
           onDrag={() => {}}
           onClick={this._onTappedIcecream}
           animation={{ name: '02', run: this.state.runAnimation, loop: true }}
         />
-      </ViroARScene>
+      </React.Fragment>
     );
-  },
+  }
 
   _onTappedIcecream() {
     this.setState({
       runAnimation: !this.state.runAnimation,
     });
-  },
-});
-
-module.exports = MainScene;
+  }
+}
+export default IceCreamMan;
+module.exports = IceCreamMan;

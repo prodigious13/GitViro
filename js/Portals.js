@@ -14,15 +14,17 @@ import Island from './components/Island';
 import Surf from './components/Surf';
 import Counter from './components/Counter';
 import Github from './components/Github';
+import IceCreamMan from './IceCreamMan';
 
 export default class MainPortalScene extends Component {
   render() {
     return (
       <ViroARScene onTrackingUpdated={this._onInitialized}>
         <ViroAmbientLight color="#ffffff" intensity={200} />
+        <Counter />
+        <IceCreamMan />
         <Island />
         <Surf />
-        <Counter />
         <Github
           url={'https://api.github.com/repos/facebook/react'}
           position={[8, 0, 0]}
